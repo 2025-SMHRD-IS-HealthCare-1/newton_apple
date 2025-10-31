@@ -1,5 +1,4 @@
-# app2/server.py
-
+# jetson_move/app2/move_server.py
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -19,6 +18,7 @@ import requests
 import os
 import threading
 import json
+import re
 # import streamlit as st
 
 # 카메라 초기화
@@ -48,7 +48,7 @@ def worker(name):
             filename = os.path.join(save_dir, f"apple.jpg")
 
             cv2.imwrite(filename, frame)
-            print(f"📸 저장됨: {filename}")
+#             print(f"📸 저장됨: {filename}")
 
             # image send
             with open(FILE_PATH, 'rb') as f:
@@ -56,12 +56,26 @@ def worker(name):
                 # filename, file object, Content-Type 순서로 지정
                 files = {'file': ('apple.jpg', f, 'image/jpeg')}
                 response = requests.post(SERVER_URL, files=files)
-                print(f"전송 완료 ({response.status_code}): {response.text}")
-                data_jaeho= json.loads(response.text)
+#                 print(f"전송 완료 ({response.status_code}): {response.text}")
+#                 data_jaeho= json.loads(response.text)
 #                 print(f" if : {data_jaeho["detections"][0]["cls"]}")
-                print(f" if : {data_jaeho}")
+#                 match = re.search(r'"score"\s*:\s*"([^"]+)"', response.text)
+                match = re.search(r'"score"\s*:\s*([0-9.]+)', response.text)
+                if match:
+                    score_value = round(float(match.group(1)),2)
+                    print(score_value)  # 0.42699679732322693
+                    
+                    if score_value>=0.3:
+                        robot.forward(1) 
+                    elif score_value is None : 
+                        robot.stop() 
+                    else :
+                        robot.stop() 
+                else :
+                    robot.stop() 
+                        
                 
-            time.sleep(3)  # 0.1초 간격 (100ms)
+            time.sleep(0.3)  # 0.1초 간격 (100ms)
 #             return {response.text}
             
 
