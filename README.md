@@ -78,6 +78,8 @@ swap ram 8G, jetbot-clock enable, micro sd 128G
 "IDENTIFIED WITH mysql_native_password"
 해결 방법을 인터넷으로 찾았으나, 권한이 없어서 적용은 못 해봤습니다.
 
+2025년 시점, 추천 개발보드는 jetson origin 혹은 raspberry pi + AI hat 이라고 멘토링 받았습니다
+
 가습기 모듈 점검 : https://youtube.com/shorts/rXoru3FU6JU
 
 젯봇 수동 제어 : https://youtu.be/KAyhEBa5eY8
