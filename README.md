@@ -1,14 +1,19 @@
-00. 사과 방제 로봇
-2025-10-18 부터 2주갂 작업 했습니다.
+사과 방제 로봇
+2025-10-18 부터 2주간 작업 했습니다.
 사과 농사에는 많은 농약이 사용 됩니다.
 농가의 고령화와 저출산, 그리고,
 기후 변화로 40년젂 흔하고 맛있던 사과는 볼 수 없게 되었습니다.
 이에 발젂하는 인공지능과 로봇 기술을 이용하여
 사과 농장에 홗기를 되찾고 싶습니다.
+
 현재 사용 기계 :
+
 <img width="511" height="291" alt="Image" src="https://github.com/user-attachments/assets/c9645876-6db7-4b78-8963-3272fdfb2ef3" />
+
 앞으로 사용될 기계 :
 <img width="897" height="440" alt="Image" src="https://github.com/user-attachments/assets/1e9c5ed6-a0fc-40c2-8ae7-acf76190dc5a" />
+
+
 2020년 발표된 yahboom jetbot 4G 를 이용하기 위해서
 홈페이지도 살펴보고, nVidia jetson nano 안내 사이트도 참조합니다.
 급변하는 인공지능 시대에 최신 ubuntu 도 아니고,
@@ -65,9 +70,15 @@ swap ram 8G, jetbot-clock enable, micro sd 128G
 해결 방법을 인터넷으로 찾았으나, 권한이 없어서 적용은 못 해봤습니다.
 
 가습기 모듈 점검 : https://youtube.com/shorts/rXoru3FU6JU
+
 젯봇 수동 제어 : https://youtu.be/KAyhEBa5eY8
+
 젯봇 객체 탐지후 동작 : https://youtube.com/shorts/VgxVdtdwWI4
+
 여기까지 도움을 주신 강사님들과 멘토님들,
+
 함께 씨름한 팀원들에게 감사 드립니다.
+
 참고 소스 코드 : 서버쪽 yolo11n.pt 파일은 삭제 했습니다.
+
 
