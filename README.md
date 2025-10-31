@@ -76,15 +76,12 @@ swap ram 8G, jetbot-clock enable, micro sd 128G
 프로젝트용 디비 접속 시도시 아래 오류가 발생했고,
 
 "IDENTIFIED WITH mysql_native_password"
-해결 방법을 인터넷으로 찾았으나, 권한이 없어서 적용은 못 해봤습니다.
-
+해결 방법을 인터넷으로 찾았으나, 권한이 없어서 적용은 못 해봤습니다.<br/>
 2025년 시점, 추천 개발보드는 jetson origin 혹은 raspberry pi + AI hat 이라고 멘토링 받았습니다
 
 가습기 모듈 점검 : https://youtube.com/shorts/rXoru3FU6JU
-
-젯봇 수동 제어 : https://youtu.be/KAyhEBa5eY8
-
-젯봇 객체 탐지후 동작 : https://youtube.com/shorts/VgxVdtdwWI4
+<br/>젯봇 수동 제어 : https://youtu.be/KAyhEBa5eY8
+<br/>젯봇 객체 탐지후 동작 : https://youtube.com/shorts/VgxVdtdwWI4
 
 여기까지 도움을 주신 강사님들과 멘토님들,
 함께 씨름한 팀원들에게 감사 드립니다.
