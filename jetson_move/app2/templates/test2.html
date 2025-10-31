@@ -1,0 +1,68 @@
+<!-- app2/templates/test2.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI with Jinja2</title>
+</head>
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <button id="desin">desinfestation</button>
+    <br>
+    <button id="auto">auto</button>
+    <h1>{{ message }}</h1> 
+    
+    <script>
+        document.getElementById('start').addEventListener('click', async () => {
+            const response = await fetch('/start', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const order = await response.json();
+            console.log(order);
+    //         alert(order);    
+        });
+        
+        document.getElementById('stop').addEventListener('click', async () => {
+            const response = await fetch('/stop', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const order = await response.json();
+            console.log(order);
+    //         alert(order);    
+        });
+        
+        document.getElementById('desin').addEventListener('click', async () => {
+            const response = await fetch('/desin', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const order = await response.json();
+            console.log(order);
+    //         alert(order);    
+        });
+        
+        document.getElementById('auto').addEventListener('click', async () => {
+            const response = await fetch('/auto', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const order = await response.json();
+            console.log(order); 
+        });
+    </script>
+</body>
+</html>
