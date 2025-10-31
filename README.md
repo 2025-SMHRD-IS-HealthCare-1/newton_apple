@@ -64,6 +64,8 @@ swap ram 8G, jetbot-clock enable, micro sd 128G
 사과 탐지 서버 : 수업에서 사용된 코드를 거의 그대로 사용하면서,
 탐지 욜로 모델만 변경 하였습니다.
 
+![Image](https://github.com/user-attachments/assets/e01cc073-1f01-486e-9811-0e424147afac)
+
 젯봇에 설치한 점검용 데이터베이스는 접속이 원활 했으나,
 프로젝트용 디비 접속 시도시 아래 오류가 발생했고,
 "IDENTIFIED WITH mysql_native_password"
@@ -76,9 +78,7 @@ swap ram 8G, jetbot-clock enable, micro sd 128G
 젯봇 객체 탐지후 동작 : https://youtube.com/shorts/VgxVdtdwWI4
 
 여기까지 도움을 주신 강사님들과 멘토님들,
-
 함께 씨름한 팀원들에게 감사 드립니다.
-
 참고 소스 코드 : 서버쪽 yolo11n.pt 파일은 삭제 했습니다.
 
 
