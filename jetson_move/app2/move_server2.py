@@ -75,7 +75,7 @@ def worker(name):
                     robot.stop() 
                         
                 
-            time.sleep(0.5)  # 0.1초 간격 (100ms)
+            time.sleep(0.3)  # 0.1초 간격 (100ms)
 #             return {response.text}
             
 
